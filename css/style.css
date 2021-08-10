@@ -26,7 +26,17 @@ body {
 header {
     position: fixed;
     width: 100%;
-    padding-top: 38px;
+    padding: 38px 0;
+    transition: background-color .6s ease-in-out;
+}
+
+.fade {
+    background-color: rgba(84,90,91,0.67);
+    transition: background-color .6s ease-in-out;
+}
+
+header.fade  a{
+    color: #fff;
 }
 
 header .d-flex {
@@ -127,3 +137,62 @@ header ul li:hover a {
     margin: auto;
 }
 
+.progress {
+    background-color: #e9e9e9;
+}
+
+
+.progress_wrapper {
+    background-color: #f8f9f9;
+    max-width: 50%;
+}
+
+.progress_wrapper {
+    padding: 164px 0;
+}
+
+.progress_wrapper .container {
+    max-width: 585px;
+    margin: 0 0 0 auto ;
+}
+
+.progress progress {
+    margin-bottom: 60px;
+    height: 3px;
+    min-width: 500px;
+    background-color: #f8f9f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #d8d8d8;
+}
+
+progress::-webkit-progress-value {
+    background: #10c9c3;
+}
+
+progress::-moz-progress-bar {
+    background: #10c9c3;
+}
+
+
+.progress progress:before {
+    font-family: 'Montserrat', sans-serif;
+    content: "UI/UX DESIGN 75%";
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 12px;
+}
+
+.progress progress:nth-last-child(2):before {
+    content: "WEB DEVELOPMENT 90%";
+}
+
+.progress progress:last-of-type:before {
+    content: "MARKETING 65%";
+}
