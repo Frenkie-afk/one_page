@@ -102,3 +102,28 @@ header ul li:hover a {
 .we_design_content a:hover {
     background-color: #11dbd5;
 }
+
+.about_us {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    color: #191919;
+    margin-bottom: 40px;
+}
+
+.description {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #787878;
+    padding: 0 290px;
+    margin-bottom: 40px;
+}
+
+.about_us span img {
+    width: auto;
+    margin: auto;
+}
+
